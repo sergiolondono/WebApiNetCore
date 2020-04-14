@@ -1,0 +1,34 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:57070",
+      "sslPort": 44332
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/TestConfiguration",
+      "environmentVariables": {
+        "Vault": "https://key-vault-sergio.vault.azure.net/",
+        "ClientSecret": "zmX7:tZK@19VOaHn4KfF-R?@XO03/cw=",
+        "ClientId": "48ecd659-fe91-421c-bb09-263388c833df",
+        "varPrueba": "valor de prueba desde Variables de Entorno",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "WebAPIPrueba": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "weatherforecast",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
